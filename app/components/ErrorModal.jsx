@@ -10,6 +10,7 @@ var ErrorModal = React.createClass({
     title: React.PropTypes.string,
     message: React.PropTypes.string.isRequired
   },
+  //To open the Component
   componentDidMount: function () {
     var modal = new Foundation.Reveal($('#error-modal'));
     modal.open();
