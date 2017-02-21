@@ -24,7 +24,7 @@ var Nav = React.createClass ({
     if (location.length > 0) {
       this.refs.search.value = '';
       window.location.hash = '#/?location=' + encodedLocation;
-      //this.props.onSearch(encodedLocation);      
+      //this.props.onSearch(encodedLocation);
     }
   },
   render: function () {
@@ -32,7 +32,7 @@ var Nav = React.createClass ({
       <div className="top-bar">
         <div className="top-bar-left">
           <ul className="menu">
-            <li class="menu-text">React Weather App</li>
+            <li class="menu-text" activeStyle={{fontWeight: 'bold'}}>React Weather App</li>
             <li>
               <IndexLink to="/" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Get Weather</IndexLink>
             </li>
